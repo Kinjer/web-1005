@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-交互</title>
+</head>
+<body>
+<p>
+    通过onclick事件调用js中定义的方法
+</p>
+<button id="clickme" onclick="clickme()">点我</button>
+<button onclick="showAlert()">alert提示框</button>
+<button onclick="showConfirm()">confirm确认框</button>
+<button onclick="showPrompt()">prompt输入框</button>
+
+
+<script type="text/javascript">
+    function clickme() {
+        console.log("你点击了button按钮")
+    }
+
+    function showAlert() {
+        /**
+         * 系统提示框有三种
+         * alert, confirm, prompt
+         */
+        alert("alert");
+    }
+
+    function showConfirm() {
+        var result = confirm("confirm");
+        console.log(result);
+    }
+
+    function showPrompt() {
+        var result = prompt("带输入框的提示框, prompt")
+        //点确定按钮: 返回用户在输入框中输入的值
+        //点取消按钮: 返回null
+        console.log(result);
+
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-交互2</title>
+</head>
+<body>
+<input type="text" id="username" placeholder="快点输入!!!">
+<button onclick="clickMe()">点击获取内容</button>
+
+
+<script type="text/javascript">
+    function clickMe() {
+        var input = document.getElementById("username");
+        var value = input.value;
+        alert(value);
+
+        //改变元素样式
+        input.style.color = "#f88";
+        input.style.borderColor = "blue";
+    }
+</script>
+
+</body>
+</html>
